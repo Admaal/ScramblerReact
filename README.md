@@ -1,69 +1,43 @@
-# React + TypeScript + Vite
+# ScramblerReact
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto propio desarrollado con React y TypeScript para crear un juego de palabras ("Word Scrambler"), enfocado en el aprendizaje y aplicación práctica de los hooks `useReducer` y `useState`.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ScramblerReact es una aplicación interactiva donde el usuario debe reorganizar letras mezcladas para formar palabras correctas. El desarrollo de este proyecto me permitió profundizar en:
 
-## Expanding the ESLint configuration
+- Control avanzado del estado con `useReducer` y `useState`.
+- Implementación de lógicas de juego y manipulación de datos en React.
+- Uso eficiente de TypeScript para tipar componentes y estructuras de datos.
+- Diseño de componentes reutilizables y escalables.
+- Mejora de la experiencia de usuario mediante interfaces limpias y reactivas.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Aprendizajes Clave
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **useReducer & useState**: Dominio en el manejo y combinación de ambos hooks para gestionar la lógica y los estados de la aplicación.
+- **TypeScript**: Refuerzo en el tipado estático para mayor seguridad y mantenibilidad del código.
+- **Lógica de juegos**: Desarrollo de lógica para mezcla ("scramble") y validación de palabras.
+- **Buenas prácticas**: Implementación de patrones profesionales en la estructura y organización del proyecto.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Objetivo para RRHH
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Con este proyecto demuestro mi capacidad de aprendizaje autónomo, resolución de problemas, y aplicación de herramientas modernas de React y TypeScript en contextos prácticos y lúdicos.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Instalación y Uso
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/Admaal/ScramblerReact.git
+   ```
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+3. Inicia la aplicación:
+   ```bash
+   npm start
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+¡Gracias por tu interés en mi proyecto!
